@@ -1,0 +1,35 @@
+@use "../abstracts/" as *;
+
+.loginCont{
+    display: flex;
+    height: 100vh;
+    div{
+        width: 50%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        
+        input{
+            box-sizing: border-box;
+            padding: 15px 10px;
+            margin: 10px 0;
+            font-family: "Instagram Sans";
+        }
+    }
+
+    button{
+        width: 100%;
+        padding: 20px;
+        background-color: transparent;
+        border-radius: 100px;
+        font-family: "Instagram Sans";
+    }
+
+    .facebook{
+        background-color: $facebookBlue ;
+        color: white;
+        border: none;
+    }
+}

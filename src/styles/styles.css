@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Instagram Sans";
+  src: url(Instagram-Sans.ttf);
+}
+@font-face {
+  font-family: "Instagram Headline";
+  src: url(Instagram-Headline.otf);
+}
+body {
+  font-family: "Instagram Sans";
+}
+
+h1 {
+  font-family: "Instagram Headline";
+}
+
+.loginCont {
+  display: flex;
+  height: 100vh;
+}
+.loginCont div {
+  width: 50%;
+}
+.loginCont form {
+  display: flex;
+  flex-direction: column;
+}
+.loginCont form input {
+  box-sizing: border-box;
+  padding: 15px 10px;
+  margin: 10px 0;
+  font-family: "Instagram Sans";
+}
+.loginCont button {
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 100px;
+  font-family: "Instagram Sans";
+}
+.loginCont .facebook {
+  background-color: #316FF6;
+  color: white;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}/*# sourceMappingURL=styles.css.map */
