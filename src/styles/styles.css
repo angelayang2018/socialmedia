@@ -12,41 +12,108 @@ body {
 
 h1 {
   font-family: "Instagram Headline";
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 .loginCont {
   display: flex;
-  height: 100vh;
 }
-.loginCont div {
+.loginCont .loginFormCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.loginCont .loginPic {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px 5%;
+}
+.loginCont .or {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  line-height: 0.1em;
+  margin: 40px 0 10px;
+}
+.loginCont .or span {
+  background-color: white;
+  padding: 0 10px;
+}
+.loginCont .loginFormCont {
+  box-sizing: border-box;
+  padding: 0 5%;
 }
 .loginCont form {
   display: flex;
   flex-direction: column;
 }
 .loginCont form input {
-  box-sizing: border-box;
-  padding: 15px 10px;
-  margin: 10px 0;
   font-family: "Instagram Sans";
 }
-.loginCont button {
+.loginCont .btnColor {
   width: 100%;
   padding: 20px;
-  background-color: transparent;
   border-radius: 100px;
   font-family: "Instagram Sans";
+  font-size: 18px;
+  position: relative;
+  background: white;
+  background-clip: padding-box;
+  border: none;
+}
+.loginCont .btnColor p {
+  background-image: linear-gradient(to right, #F58529, #DD2A7B, #8134AF);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+}
+.loginCont .btnColor:hover {
+  background: linear-gradient(to right, #F58529, #DD2A7B, #8134AF);
+}
+.loginCont .btnColor:hover p {
+  color: white;
+}
+.loginCont .btnColor::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(to right, #F58529, #DD2A7B, #8134AF);
+  content: "";
+  z-index: -1;
+  border-radius: 100px;
 }
 .loginCont .facebook {
+  width: 100%;
+  padding: 20px;
+  border-radius: 100px;
+  font-family: "Instagram Sans";
+  font-size: 18px;
   background-color: #316FF6;
-  color: white;
   border: none;
+  color: white;
+}
+.loginCont .facebook:hover {
+  background: #2b63dc;
 }
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+}
+.footer li {
+  padding: 10px 20px;
 }/*# sourceMappingURL=styles.css.map */
