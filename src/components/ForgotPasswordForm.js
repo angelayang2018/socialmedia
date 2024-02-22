@@ -14,16 +14,17 @@ export default function ForgotPasswordForm() {
         </p>
         <TextField
           fullWidth
-          label="Phone Number, Username or Email"
+          label="Email"
           margin="normal"
           variant="standard"
         />
+        <br></br>
+        
         <button className="btnColor">
-          <p>SEND LOGIN LINK</p>
+          <p>SEND RESET LINK</p>
         </button>
 
-        <a href="">
-          {" "}
+        <a href="https://help.instagram.com/374546259294234">
           <p>Can't reset your password?</p>
         </a>
       </form>
@@ -31,7 +32,7 @@ export default function ForgotPasswordForm() {
         <span>Or</span>
       </p>
       <button className="btnColor">
-        <p>CREATE A NEW ACCOUNT</p>
+        <Link to = "/signup"><p>CREATE A NEW ACCOUNT</p></Link>
       </button>
 
       <Link to="/login">

@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <ul className="footer">
-      <li>English(US)</li>
+      <li>English (US)</li>
       <li>Instagram from Meta</li>
       <li>API</li>
       <li>Privacy</li>
