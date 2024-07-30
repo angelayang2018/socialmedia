@@ -7,7 +7,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

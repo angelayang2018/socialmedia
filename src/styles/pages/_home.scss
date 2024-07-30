@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.homeContainer{
+    padding-left: 300px;
+}

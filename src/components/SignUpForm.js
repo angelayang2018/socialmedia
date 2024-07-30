@@ -53,14 +53,7 @@ export default function SignUpForm() {
           value = {name}
           onChange = {(e) => setName(e.target.value)}
         />
-        <TextField
-          fullWidth
-          label="Username"
-          margin="normal"
-          variant="standard"
-          value = {username}
-          onChange = {(e) => setUsername(e.target.value)}
-        />
+        
         <TextField
           fullWidth
           type={showPassword ? "text" : "password"}

@@ -31,7 +31,7 @@ export default function SignUpForm() {
       <form onSubmit={SignIn}>
         <TextField
           fullWidth
-          label="Username or Email"
+          label="Email"
           margin="normal"
           variant="standard"
           value = {email}
