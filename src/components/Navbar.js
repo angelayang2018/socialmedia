@@ -10,10 +10,8 @@ export default function Navbar() {
       <ul>
         <li className = "active"><FontAwesomeIcon icon={faHouse} /> Home</li>
         <li><FontAwesomeIcon icon={faMagnifyingGlass} /> Search</li>
-        <li><FontAwesomeIcon icon={faComment} /> Messages</li>
-        <li><FontAwesomeIcon icon={faHeart} /> Notifications</li>
         <li><FontAwesomeIcon icon={faSquarePlus} /> Create</li>
-        <li>Profile</li>
+        <li><div className = "navProfile"><div className = "profilePhoto">Pic</div>Profile </div></li>
       </ul>
 
       <ul>
