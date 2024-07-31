@@ -30,6 +30,11 @@
             font-size: 20px;
         }
 
+        li:hover{
+            background-color: $lightergray;
+            border-radius: 10px;
+        }
+
         .active{
             background: white;
             border-radius: 40px;
@@ -41,6 +46,11 @@
     .profilePhoto{
         width: 25px;
         height: 25px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
     }
 
     

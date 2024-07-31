@@ -258,6 +258,10 @@ hr {
   padding: 20px 10px;
   font-size: 20px;
 }
+.navbar ul li:hover {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+}
 .navbar ul .active {
   background: white;
   border-radius: 40px;
@@ -265,6 +269,10 @@ hr {
 .navbar .profilePhoto {
   width: 25px;
   height: 25px;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
 }
 
 .post {
