@@ -9,14 +9,17 @@ export default function Home() {
     
       <div className="home">
         <Navbar></Navbar>
+        <div className = "navTemp"></div>
         <div className = "homeContainer">
 
           <div className="posts">
             <Post></Post>
             <Post></Post>
           </div>
+
+          <Suggestions></Suggestions>
         </div>
-        <Suggestions></Suggestions>
+        
       </div>
   
   );

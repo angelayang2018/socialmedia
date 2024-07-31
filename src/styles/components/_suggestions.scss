@@ -2,12 +2,26 @@
 @use "../abstracts/" as *;
 
 .suggestionsContainer{
-    position: fixed;
-    right: 0;
+
     background-color: rgb(248, 247, 247);
-    height: 100vh;
+
     padding-top: 10px;
     width: 350px;
+
+    .suggestProfile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            margin: 0;
+        }
+
+        .profile{
+            display: flex;
+            gap: 10px;
+        }
+    }
 
 }
 
@@ -16,5 +30,18 @@
     .links{
         display: flex;
         flex-wrap: wrap;
+        gap: 5px;
+
+        p{
+            margin: 0;
+        }
     }
+}
+
+.suggestion{
+    margin-bottom: 1em;
+}
+
+.blue{
+    color: $facebookBlue;
 }

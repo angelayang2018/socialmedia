@@ -11,7 +11,7 @@ export default function Navbar() {
         <li className = "active"><FontAwesomeIcon icon={faHouse} /> Home</li>
         <li><FontAwesomeIcon icon={faMagnifyingGlass} /> Search</li>
         <li><FontAwesomeIcon icon={faSquarePlus} /> Create</li>
-        <li><div className = "navProfile"><div className = "profilePhoto">Pic</div>Profile </div></li>
+        <li><div className = "profilePhoto">Pic</div>Profile</li>
       </ul>
 
       <ul>

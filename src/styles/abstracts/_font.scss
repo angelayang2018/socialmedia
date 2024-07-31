@@ -4,6 +4,21 @@
 }
 
 @font-face {
+  font-family: "Instagram Sans Bold";
+  src: url(Instagram-Sans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Instagram Sans Medium";
+  src: url(Instagram-Sans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Instagram Sans Light";
+  src: url(Instagram-Sans-Light.ttf);
+}
+
+@font-face {
   font-family: "Instagram Headline";
   src: url(Instagram-Headline.otf);
 }
@@ -20,3 +35,15 @@ h1{
 h2{
     font-size: 18px;
 }
+
+.bold{
+  font-family: "Instagram Sans Medium"
+}
+
+.light{
+  font-family: "Instagram Sans Light"
+}
+
+
+
+
