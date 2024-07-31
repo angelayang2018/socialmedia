@@ -1,7 +1,12 @@
 @use "../abstracts/" as *;
 
+.login{
+  background-color: white;
+  height: 100%;
+}
 .loginCont {
   display: flex;
+  
 
   .loginFormCont{
     width: 100%;

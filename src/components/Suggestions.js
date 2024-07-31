@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Suggestions() {
   return (
@@ -11,7 +12,7 @@ export default function Suggestions() {
             <p>Angela Yang</p>
           </div>
         </div>
-        <p className = "blue">Switch</p>
+        <Link to ="/login"><p className = "blue">Switch</p></Link>
       </div>
       <div>
         <h4>Suggestion For You</h4>
@@ -20,8 +21,8 @@ export default function Suggestions() {
             <div className="profile">
               <div className="profilePhoto">Pic</div>
               <div>
-                <p className="bold">angelayang146</p>
-                <p>Angela Yang</p>
+                <p className="bold">heeeyalvin</p>
+                <p>Alvin Agana</p>
               </div>
             </div>
             <p className = "blue">Follow</p>
@@ -40,7 +41,7 @@ export default function Suggestions() {
           <p>Locations • </p>
           <p>Press</p>
         </div>
-        <p>© 2024 INSTAGRAM FROM META</p>
+        <p>© 2024 Instagram from Meta</p>
       </div>
     </div>
   );

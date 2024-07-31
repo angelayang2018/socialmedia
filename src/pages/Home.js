@@ -12,6 +12,7 @@ export default function Home() {
         <div className="posts">
           <Post></Post>
           <Post></Post>
+          <Post></Post>
         </div>
         <Suggestions></Suggestions>
       </div>

@@ -57,6 +57,11 @@ h2 {
   min-width: 275px;
 }
 
+.login {
+  background-color: white;
+  height: 100%;
+}
+
 .loginCont {
   display: flex;
 }
@@ -147,6 +152,7 @@ h2 {
 
 .profile {
   display: flex;
+  background-color: white;
 }
 .profile .profilePic {
   width: 150px;
@@ -224,6 +230,7 @@ hr {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+  margin-bottom: 0px;
 }
 .footer li {
   padding: 10px 20px;
@@ -344,6 +351,7 @@ hr {
 .suggestionsContainer .suggestProfile .profile {
   display: flex;
   gap: 10px;
+  background-color: transparent;
 }
 
 .home_footer {
@@ -372,6 +380,37 @@ hr {
   border: 1px solid #e7e7e7;
 }
 
+.more button {
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+.more p {
+  font-size: 20px;
+  margin: 0px;
+  font-family: "Instagram Sans";
+}
+.more svg {
+  width: 20px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  background-color: #FEDA77;
+  height: 100%;
+  z-index: 1000;
 }/*# sourceMappingURL=styles.css.map */
