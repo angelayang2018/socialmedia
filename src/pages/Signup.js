@@ -4,6 +4,8 @@ import SignUpForm from "../components/SignUpForm";
 
 export default function Signup() {
   return (
-    <LogTemplate form = {<SignUpForm/>}></LogTemplate>
+    
+    <LogTemplate  form = {<SignUpForm/>}></LogTemplate>
+    
   );
 }

@@ -54,7 +54,7 @@ h2 {
 }
 
 .navTemp {
-  width: 275px;
+  min-width: 275px;
 }
 
 .loginCont {
@@ -145,6 +145,79 @@ h2 {
   background: #2b63dc;
 }
 
+.profile {
+  display: flex;
+}
+.profile .profilePic {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #e7e7e7;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  background-color: #e7e7e7;
+}
+.profile .container {
+  width: 100%;
+  margin: 40px 115px;
+}
+.profile .profileContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  padding: 20px 0;
+}
+.profile .editProfile {
+  display: flex;
+  gap: 10px;
+}
+.profile .followerInfo {
+  display: flex;
+  gap: 20px;
+}
+.profile .posts {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 0;
+}
+.profile .editButton {
+  border: 1px solid #e7e7e7;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-self: center;
+  padding: 5px 20px;
+}
+.profile .editButton p {
+  margin: 0px;
+}
+.profile .profileFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile .profileFooterLinks {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+}
+
+.darkgray {
+  color: #adacac;
+  font-size: 14px;
+}
+
+hr {
+  border-color: #e7e7e7;
+  border-top: 0px;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +240,7 @@ h2 {
   height: 100vh;
   box-sizing: border-box;
   background-color: white;
-  padding: 10px 50px 10px 20px;
+  padding: 10px 20px;
   box-shadow: 1px 0px 5px #e7e7e7;
   left: 0px;
 }
@@ -186,7 +259,7 @@ h2 {
   font-size: 20px;
 }
 .navbar ul .active {
-  background: #e7e7e7;
+  background: white;
   border-radius: 40px;
 }
 .navbar .profilePhoto {
@@ -283,6 +356,12 @@ h2 {
 
 .blue {
   color: #316FF6;
+}
+
+.squarePost {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #e7e7e7;
 }
 
 body {

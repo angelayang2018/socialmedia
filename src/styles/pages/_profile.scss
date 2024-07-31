@@ -1,0 +1,85 @@
+@use "../abstracts/" as *;
+
+.profile{
+    display: flex;
+    
+
+    .profilePic{
+        width: 150px;
+        height: 150px;
+        border: 1px solid $lightergray;
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-self: center;
+        background-color: $lightergray;
+    }
+    .container{
+        width: 100%;
+        margin: 40px 115px;
+        
+    }
+
+    .profileContainer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 50px;
+        padding: 20px 0;
+    }
+
+    .editProfile{
+        display: flex;
+        gap: 10px;
+    }
+
+
+    .followerInfo{
+        display: flex;
+        gap: 20px;
+    }
+
+    .posts{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .editButton{
+        border: 1px solid $lightergray;
+        background-color: $lightergray;
+        border-radius: 5px;
+        height: fit-content;
+        align-self: center;
+        padding: 5px 20px;
+        p{
+            margin: 0px;
+        }
+    }
+
+    .profileFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .profileFooterLinks{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 10px;
+   }
+
+}
+
+.darkgray{
+    color: $lightgray;
+    font-size: 14px;
+}
+
+hr{
+   border-color: $lightergray;
+   border-top: 0px;
+}
