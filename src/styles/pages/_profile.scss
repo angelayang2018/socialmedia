@@ -1,10 +1,14 @@
 @use "../abstracts/" as *;
 
 .profile{
+    
     display: flex;
     background-color: white;
     
-
+    a{
+        height: fit-content;
+       
+    }
     .profilePic{
         width: 150px;
         height: 150px;
@@ -33,6 +37,9 @@
     .editProfile{
         display: flex;
         gap: 10px;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -58,6 +65,7 @@
         p{
             margin: 0px;
         }
+        cursor: pointer;
     }
 
     .profileFooter{

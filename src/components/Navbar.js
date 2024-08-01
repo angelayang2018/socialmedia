@@ -13,10 +13,10 @@ export default function Navbar() {
       <ul>
       <Link to = "/"><li className = "active"><FontAwesomeIcon icon={faHouse} />Home</li></Link>
         <li><FontAwesomeIcon icon={faMagnifyingGlass} /> Search</li>
-        <li><FontAwesomeIcon icon={faSquarePlus} /> Create</li>
+        <Create />
         <Link to = "/profile"><li><div className = "profilePhoto">Pic</div>Profile</li></Link>
       </ul> 
-      <More></More>
+      <More />
       
     </div>
   );

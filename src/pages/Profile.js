@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import SquarePost from "../components/SquarePost";
-import { Square } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export default function Profile() {
   return (
@@ -14,7 +14,7 @@ export default function Profile() {
           <div>
             <div className="editProfile">
               <h2>angelayang146</h2>
-              <button className = "editButton" ><p className = "bold">Edit profile</p></button>
+              <Link to = "/editprofile"><button className = "editButton" ><p className = "bold">Edit profile</p></button></Link>
             </div>
             <div className="followerInfo">
               <p><span className="bold">2</span> posts</p>
