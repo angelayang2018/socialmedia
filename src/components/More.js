@@ -81,7 +81,7 @@ export default function More() {
       <button
         onClick={handleClick}
       >
-        <FontAwesomeIcon icon={faBars} /> <p>More</p>
+        <FontAwesomeIcon icon={faBars} /> <span className = "navText moreText">More</span>
       </button>
       <Menu
         anchorEl={anchorEl}

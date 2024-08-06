@@ -14,7 +14,12 @@
         background-color: transparent;
     }
 
-    p{
+    button:hover{
+        background-color: $lightergray;
+        
+    }
+
+    .moreText{
         font-size: 20px;
         margin: 0px;
         font-family: "Instagram Sans"

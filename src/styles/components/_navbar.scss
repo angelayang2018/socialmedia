@@ -56,3 +56,17 @@
 
     
 }
+
+@media (max-width: 1200px) {
+    .navText {
+      display: none;
+    }
+
+    .navbar{
+        width: 100px;
+    }
+
+    .navTemp{
+        width: 100px;
+    }
+  }

@@ -54,7 +54,7 @@ h2 {
 }
 
 .navTemp {
-  min-width: 275px;
+  width: 275px;
 }
 
 .login {
@@ -291,6 +291,17 @@ hr {
   color: black;
 }
 
+@media (max-width: 1200px) {
+  .navText {
+    display: none;
+  }
+  .navbar {
+    width: 100px;
+  }
+  .navTemp {
+    width: 100px;
+  }
+}
 .post {
   margin: 10px 0;
   background-color: white;
@@ -401,7 +412,10 @@ hr {
   box-sizing: border-box;
   background-color: transparent;
 }
-.more p {
+.more button:hover {
+  background-color: #e7e7e7;
+}
+.more .moreText {
   font-size: 20px;
   margin: 0px;
   font-family: "Instagram Sans";
