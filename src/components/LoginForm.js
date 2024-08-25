@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
-export default function SignUpForm() {
+export default function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,11 +17,11 @@ export default function SignUpForm() {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
     .then((useCredential) => {
+        
         console.log(useCredential)
     }).catch((error) => {
         console.log(error);
     })
-   
 
   }
   return (

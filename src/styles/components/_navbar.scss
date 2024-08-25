@@ -57,16 +57,27 @@
     
 }
 
-@media (max-width: 1200px) {
+.logo{
+    display: none;
+}
+
+@media (max-width: 1300px) {
     .navText {
       display: none;
     }
 
     .navbar{
-        width: 100px;
+        width:  95px;
     }
 
     .navTemp{
-        width: 100px;
+        width: 95px;
+    }
+    .instagram{
+        display: none;
+    }
+
+    .logo{
+        display: inline-block;
     }
   }

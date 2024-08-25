@@ -5,9 +5,12 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import {auth} from "../firebase";
+import {useNavigate} from "react-router-dom";
 
 
 export default function SignUpForm() {
+
+  let navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -21,7 +24,9 @@ export default function SignUpForm() {
     e.preventDefault();
     createUserWithEmailAndPassword (auth, email, password)
     .then((useCredential) => {
-        console.log(useCredential)
+
+        console.log(useCredential) 
+        navigate("/login", {replace: "true"})
     }).catch((error) => {
         console.log(error);
     })
