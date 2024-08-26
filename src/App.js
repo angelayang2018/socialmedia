@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import EditProfile from "./pages/EditProfile";
 
 function App() {
+
   return (
     <div>
       <Routes>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path = "/profile" element = {<Profile />}></Route>
+        <Route path = "/profile/:userId" element = {<Profile></Profile>}></Route>
         <Route path = "/editprofile" element = {<EditProfile />}></Route>
         <Route path="*" element={<Home />} />
       </Routes>

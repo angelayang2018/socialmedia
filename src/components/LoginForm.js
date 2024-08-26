@@ -17,7 +17,6 @@ export default function LoginForm() {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
     .then((useCredential) => {
-        
         console.log(useCredential)
     }).catch((error) => {
         console.log(error);
@@ -36,6 +35,7 @@ export default function LoginForm() {
           variant="standard"
           value = {email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
 
         <TextField
@@ -58,6 +58,7 @@ export default function LoginForm() {
               </InputAdornment>
             ),
           }}
+          required
         />
         <Link to="/forgotpassword"><p>Forgot your password?</p></Link>
 

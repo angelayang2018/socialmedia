@@ -49,6 +49,7 @@ export default function SignUpForm() {
           variant="standard"
           value = {email}
           onChange = {(e) => setEmail(e.target.value)}
+          required
         />
         <TextField
           fullWidth
@@ -57,6 +58,7 @@ export default function SignUpForm() {
           variant="standard"
           value = {name}
           onChange = {(e) => setName(e.target.value)}
+          required
         />
         
         <TextField
@@ -79,6 +81,7 @@ export default function SignUpForm() {
               </InputAdornment>
             ),
           }}
+          required
         />
         <p>
           People who use our service may have uploaded your contact information
