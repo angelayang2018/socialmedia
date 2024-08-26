@@ -97,7 +97,7 @@ export default function SignUpForm() {
       </form>
 
       <p>
-        Have an account? <Link to = "/login">Log in</Link>
+        Have an account? <Link className = "blueLink" to = "/login">Log in</Link>
       </p>
     </div>
   );

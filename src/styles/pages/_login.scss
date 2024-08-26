@@ -1,19 +1,18 @@
 @use "../abstracts/" as *;
 
-.login{
+.login {
   background-color: white;
   height: 100%;
+
 }
 .loginCont {
   display: flex;
-  
 
-  .loginFormCont{
+  .loginFormCont {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
   }
 
   .loginPic {
@@ -60,9 +59,7 @@
     position: relative;
     background: white;
     background-clip: padding-box;
-    border: none;
     
-
 
     p {
       background-image: linear-gradient(to right, $orange, $magenta, $purple);
@@ -70,25 +67,27 @@
       color: transparent;
       padding: 0;
       margin: 0;
+      
     }
 
     &:hover {
-        background: linear-gradient(to right, $orange, $magenta, $purple);
+      background: linear-gradient(to right, $orange, $magenta, $purple);
       p {
         color: white;
       }
     }
   }
 
-  .btnColor::after{
+  .btnColor::after {
     position: absolute;
-    top: -2px; bottom: -2px;
-    left: -2px; right: -2px;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
     background: linear-gradient(to right, $orange, $magenta, $purple);
-    content: '';
-    z-index: -1;
+    content: "";
     border-radius: 100px;
-
+    z-index: -1;
   }
 
   .facebook {
@@ -99,7 +98,6 @@
     font-size: 18px;
     background-color: $facebookBlue;
     border: none;
-
     color: white;
 
     &:hover {

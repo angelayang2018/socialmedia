@@ -26,7 +26,6 @@ export default function LoginForm() {
   return (
     <div className="loginFormCont">
       <h1>Log in</h1>
-
       <form onSubmit={SignIn}>
         <TextField
           fullWidth
@@ -37,7 +36,6 @@ export default function LoginForm() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-
         <TextField
           fullWidth
           type={showPassword ? "text" : "password"}
@@ -61,7 +59,6 @@ export default function LoginForm() {
           required
         />
         <Link to="/forgotpassword"><p>Forgot your password?</p></Link>
-
         <button className="btnColor">
           <p>LOG IN</p>
         </button>

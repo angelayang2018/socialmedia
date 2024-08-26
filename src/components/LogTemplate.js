@@ -8,11 +8,11 @@ export default function LogTemplate({ form }) {
         <div className="loginPic">
           <div>
             <img
-              src="https://i.ibb.co/p1qvYfJ/instagram-logo.png"
+              src="images/instagram-logo.png"
               alt="instagram-logo"
             />
           </div>
-          <img src="https://i.ibb.co/VQdPg0M/bloghome.png" alt="bloghome" />
+          <img src="images/bloghome.png" alt="bloghome" />
         </div>
         {form}
       </div>

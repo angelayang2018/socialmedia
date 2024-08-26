@@ -109,7 +109,6 @@ h2 {
   position: relative;
   background: white;
   background-clip: padding-box;
-  border: none;
 }
 .loginCont .btnColor p {
   background-image: linear-gradient(to right, #F58529, #DD2A7B, #8134AF);
@@ -133,8 +132,8 @@ h2 {
   right: -2px;
   background: linear-gradient(to right, #F58529, #DD2A7B, #8134AF);
   content: "";
-  z-index: -1;
   border-radius: 100px;
+  z-index: -1;
 }
 .loginCont .facebook {
   width: 100%;
@@ -434,10 +433,13 @@ hr {
   width: 20px;
   height: 20px;
 }
+.more a {
+  color: black !important;
+}
 
 a {
-  text-decoration: none !important;
-  color: black !important;
+  text-decoration: none;
+  color: #316FF6;
 }
 
 body {
@@ -447,6 +449,3 @@ body {
   height: 100%;
   z-index: 1000;
 }/*# sourceMappingURL=styles.css.map */
-
-
-
