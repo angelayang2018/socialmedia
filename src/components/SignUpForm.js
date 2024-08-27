@@ -19,19 +19,29 @@ export default function SignUpForm() {
   
   const handleShowPassword = () => setShowPassword((show) => !show);
 
-  const SignUp = (e) => {
-
+  const SignUp = async (e) => {
     e.preventDefault();
-    createUserWithEmailAndPassword (auth, email, password)
-    .then((useCredential) => {
 
-        console.log(useCredential) 
-        navigate("/login", {replace: "true"})
-    }).catch((error) => {
-        console.log(error);
-    })
+    
+    try {
+      const response = await fetch('http://localhost:8080/createUser', { // Replace with your actual API endpoint
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (response.ok) {
+        const result = await response.text(); // Adjust based on your API's response format
+        console.log('Sign up successful:', result);
+      } else {
+        console.error('Sign up failed:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error occurred during sign up:', error);
+    }
   }
-
   
   return (
     <div className="loginFormCont">
